@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get NextWave AI Suite - Special Offer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <img src="assets/logo.png" alt="NextWave AI Suite" class="logo">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="sales-page">
+        <section class="sales-hero">
+            <div class="container">
+                <h1>Limited Time Offer: Get NextWave AI Suite</h1>
+                <div class="offer-badge">50% OFF - Today Only!</div>
+                <p class="sales-subtitle">Join over 10,000+ entrepreneurs who are already transforming their businesses with AI</p>
+            </div>
+        </section>
+
+        <section class="sales-content">
+            <div class="container">
+                <div class="sales-grid">
+                    <div class="product-info">
+                        <h2>What You Get:</h2>
+                        <ul class="benefits-list">
+                            <li>✅ Complete AI Content Generation Suite</li>
+                            <li>✅ Advanced Business Analytics Dashboard</li>
+                            <li>✅ Automated Workflow Tools</li>
+                            <li>✅ 24/7 AI Business Assistant</li>
+                            <li>✅ Custom Integration Support</li>
+                            <li>✅ Priority Customer Support</li>
+                            <li>✅ Monthly Strategy Calls</li>
+                            <li>✅ Exclusive Member Community</li>
+                        </ul>
+
+                        <div class="testimonial">
+                            <blockquote>
+                                "NextWave AI Suite increased my productivity by 400% and helped me scale my business to 7 figures!"
+                            </blockquote>
+                            <cite>- Sarah Johnson, CEO</cite>
+                        </div>
+                    </div>
+
+                    <div class="payment-section">
+                        <div class="pricing-box">
+                            <div class="price-comparison">
+                                <div class="old-price">Regular Price: $197/month</div>
+                                <div class="new-price">Today Only: $97/month</div>
+                                <div class="savings">You Save: $100/month</div>
+                            </div>
+
+                            <div class="payment-options">
+                                <h3>Choose Your Payment Method:</h3>
+                                
+                                <!-- Stripe Payment -->
+                                <div class="payment-method">
+                                    <h4>Credit Card (Stripe)</h4>
+                                    <form id="stripe-form">
+                                        <div id="card-element">
+                                            <!-- Stripe Elements will create form elements here -->
+                                        </div>
+                                        <button type="submit" id="stripe-submit" class="payment-btn stripe-btn">
+                                            Pay with Card - $97/month
+                                        </button>
+                                    </form>
+                                </div>
+
+                                <!-- PayPal Payment -->
+                                <div class="payment-method">
+                                    <h4>PayPal</h4>
+                                    <div id="paypal-button-container"></div>
+                                </div>
+                            </div>
+
+                            <div class="guarantee">
+                                <h4>🛡️ 30-Day Money-Back Guarantee</h4>
+                                <p>Try NextWave AI Suite risk-free. If you're not completely satisfied, get a full refund within 30 days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="urgency">
+            <div class="container">
+                <div class="countdown-timer">
+                    <h3>⏰ This Offer Expires In:</h3>
+                    <div id="countdown" class="countdown">
+                        <div class="time-unit">
+                            <span id="hours">23</span>
+                            <label>Hours</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="minutes">59</span>
+                            <label>Minutes</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="seconds">59</span>
+                            <label>Seconds</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NextWave AI Suite. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
