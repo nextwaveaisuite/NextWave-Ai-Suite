@@ -1,279 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextWave AI Suite - Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NextWave AI Suite Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 </head>
-<body class="dashboard-body">
-    <div class="dashboard-container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <img src="assets/logo.png" alt="NextWave AI Suite" class="sidebar-logo">
-                <h2>AI Suite</h2>
-            </div>
-            
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="#overview" class="nav-link active" data-section="overview">📊 Overview</a></li>
-                    <li><a href="#content-generator" class="nav-link" data-section="content-generator">✍️ Content Generator</a></li>
-                    <li><a href="#analytics" class="nav-link" data-section="analytics">📈 Analytics</a></li>
-                    <li><a href="#automation" class="nav-link" data-section="automation">🤖 Automation</a></li>
-                    <li><a href="#ai-assistant" class="nav-link" data-section="ai-assistant">💬 AI Assistant</a></li>
-                    <li><a href="#integrations" class="nav-link" data-section="integrations">🔗 Integrations</a></li>
-                    <li><a href="#settings" class="nav-link" data-section="settings">⚙️ Settings</a></li>
-                </ul>
-            </nav>
-            
-            <div class="sidebar-footer">
-                <div class="user-info">
-                    <div class="user-avatar">👤</div>
-                    <div class="user-details">
-                        <span class="user-name">John Doe</span>
-                        <span class="user-plan">Pro Plan</span>
-                    </div>
-                </div>
-            </div>
-        </aside>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <header class="dashboard-header">
-                <h1 id="page-title">Dashboard Overview</h1>
-                <div class="header-actions">
-                    <button class="btn btn-primary">+ New Project</button>
-                    <div class="notifications">🔔</div>
-                </div>
-            </header>
-
-            <!-- Overview Section -->
-            <section id="overview-section" class="content-section active">
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <h3>Content Generated</h3>
-                        <div class="stat-number">1,247</div>
-                        <div class="stat-change positive">+23% this month</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Time Saved</h3>
-                        <div class="stat-number">156 hrs</div>
-                        <div class="stat-change positive">+45% this month</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Active Projects</h3>
-                        <div class="stat-number">12</div>
-                        <div class="stat-change neutral">No change</div>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Revenue Impact</h3>
-                        <div class="stat-number">$24,567</div>
-                        <div class="stat-change positive">+67% this month</div>
-                    </div>
-                </div>
-
-                <div class="dashboard-widgets">
-                    <div class="widget">
-                        <h3>Recent Activity</h3>
-                        <ul class="activity-list">
-                            <li>Generated blog post: "AI Marketing Trends 2024"</li>
-                            <li>Created social media campaign for Product X</li>
-                            <li>Automated email sequence completed</li>
-                            <li>Analytics report generated</li>
-                        </ul>
-                    </div>
-                    <div class="widget">
-                        <h3>Quick Actions</h3>
-                        <div class="quick-actions">
-                            <button class="action-btn">Generate Content</button>
-                            <button class="action-btn">Create Campaign</button>
-                            <button class="action-btn">View Analytics</button>
-                            <button class="action-btn">Setup Automation</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Content Generator Section -->
-            <section id="content-generator-section" class="content-section">
-                <div class="tool-interface">
-                    <h2>AI Content Generator</h2>
-                    <div class="content-form">
-                        <div class="form-group">
-                            <label for="content-type">Content Type:</label>
-                            <select id="content-type">
-                                <option value="blog-post">Blog Post</option>
-                                <option value="social-media">Social Media Post</option>
-                                <option value="email">Email</option>
-                                <option value="ad-copy">Ad Copy</option>
-                                <option value="product-description">Product Description</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="topic">Topic/Keywords:</label>
-                            <input type="text" id="topic" placeholder="Enter your topic or keywords">
-                        </div>
-                        <div class="form-group">
-                            <label for="tone">Tone:</label>
-                            <select id="tone">
-                                <option value="professional">Professional</option>
-                                <option value="casual">Casual</option>
-                                <option value="friendly">Friendly</option>
-                                <option value="authoritative">Authoritative</option>
-                                <option value="creative">Creative</option>
-                            </select>
-                        </div>
-                        <button class="btn btn-primary generate-btn">Generate Content</button>
-                    </div>
-                    <div class="content-output">
-                        <h3>Generated Content:</h3>
-                        <div id="generated-content" class="content-preview">
-                            Click "Generate Content" to create AI-powered content...
-                        </div>
-                        <div class="content-actions">
-                            <button class="btn btn-secondary">Copy</button>
-                            <button class="btn btn-secondary">Save</button>
-                            <button class="btn btn-secondary">Regenerate</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Analytics Section -->
-            <section id="analytics-section" class="content-section">
-                <div class="analytics-dashboard">
-                    <h2>Smart Analytics</h2>
-                    <div class="chart-container">
-                        <canvas id="analytics-chart"></canvas>
-                    </div>
-                    <div class="analytics-insights">
-                        <h3>Key Insights</h3>
-                        <ul>
-                            <li>Content engagement increased by 45% this month</li>
-                            <li>Best performing content type: Blog posts</li>
-                            <li>Optimal posting time: 2-4 PM EST</li>
-                            <li>Top keywords driving traffic: AI, automation, productivity</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Automation Section -->
-            <section id="automation-section" class="content-section">
-                <div class="automation-interface">
-                    <h2>Automation Tools</h2>
-                    <div class="automation-grid">
-                        <div class="automation-card">
-                            <h3>Email Sequences</h3>
-                            <p>Automate your email marketing campaigns</p>
-                            <button class="btn btn-primary">Setup</button>
-                        </div>
-                        <div class="automation-card">
-                            <h3>Social Media Posting</h3>
-                            <p>Schedule and auto-post to all platforms</p>
-                            <button class="btn btn-primary">Configure</button>
-                        </div>
-                        <div class="automation-card">
-                            <h3>Lead Generation</h3>
-                            <p>Automatically capture and nurture leads</p>
-                            <button class="btn btn-primary">Activate</button>
-                        </div>
-                        <div class="automation-card">
-                            <h3>Content Distribution</h3>
-                            <p>Distribute content across multiple channels</p>
-                            <button class="btn btn-primary">Enable</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- AI Assistant Section -->
-            <section id="ai-assistant-section" class="content-section">
-                <div class="chat-interface">
-                    <h2>AI Business Assistant</h2>
-                    <div class="chat-container">
-                        <div class="chat-messages" id="chat-messages">
-                            <div class="message ai-message">
-                                <div class="message-content">
-                                    Hello! I'm your AI business assistant. How can I help you grow your business today?
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chat-input">
-                            <input type="text" id="chat-input" placeholder="Ask me anything about your business...">
-                            <button id="send-message" class="btn btn-primary">Send</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Integrations Section -->
-            <section id="integrations-section" class="content-section">
-                <div class="integrations-interface">
-                    <h2>Integrations</h2>
-                    <div class="integrations-grid">
-                        <div class="integration-card">
-                            <h3>Google Analytics</h3>
-                            <p>Connect your analytics data</p>
-                            <button class="btn btn-success">Connected</button>
-                        </div>
-                        <div class="integration-card">
-                            <h3>Mailchimp</h3>
-                            <p>Sync your email lists</p>
-                            <button class="btn btn-primary">Connect</button>
-                        </div>
-                        <div class="integration-card">
-                            <h3>Shopify</h3>
-                            <p>Integrate your e-commerce store</p>
-                            <button class="btn btn-primary">Connect</button>
-                        </div>
-                        <div class="integration-card">
-                            <h3>Slack</h3>
-                            <p>Get notifications in Slack</p>
-                            <button class="btn btn-primary">Connect</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Settings Section -->
-            <section id="settings-section" class="content-section">
-                <div class="settings-interface">
-                    <h2>Settings</h2>
-                    <div class="settings-tabs">
-                        <button class="tab-btn active" data-tab="profile">Profile</button>
-                        <button class="tab-btn" data-tab="billing">Billing</button>
-                        <button class="tab-btn" data-tab="notifications">Notifications</button>
-                        <button class="tab-btn" data-tab="api">API Keys</button>
-                    </div>
-                    <div class="settings-content">
-                        <div id="profile-tab" class="tab-content active">
-                            <h3>Profile Settings</h3>
-                            <form class="settings-form">
-                                <div class="form-group">
-                                    <label>Full Name:</label>
-                                    <input type="text" value="John Doe">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email:</label>
-                                    <input type="email" value="john@example.com">
-                                </div>
-                                <div class="form-group">
-                                    <label>Company:</label>
-                                    <input type="text" value="NextWave Enterprises">
-                                </div>
-                                <button class="btn btn-primary">Save Changes</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="NextWave AI Suite Logo" />
+      <h1>Dashboard</h1>
     </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sales.html">Upgrade</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
+  <main class="dashboard-main">
+    <section class="welcome">
+      <h2>Welcome to NextWave AI Suite</h2>
+      <p>Enter your SaaS idea below and get your SaaS tool generated instantly.</p>
+    </section>
+
+    <section class="saas-generator">
+      <textarea id="ideaInput" placeholder="Enter your SaaS idea here..." rows="5"></textarea>
+      <button id="generateBtn">Generate SaaS Tool</button>
+    </section>
+
+    <section class="output" id="outputSection" style="display:none;">
+      <h3>Your Generated SaaS Tool Blueprint:</h3>
+      <pre id="outputContent"></pre>
+      <button id="copyBtn">Copy to Clipboard</button>
+    </section>
+
+    <section class="credits">
+      <p>Credits Remaining: <span id="creditsCount">5</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 NextWave AI Suite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
